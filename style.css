@@ -3,6 +3,11 @@
   --right: calc(100vw - var(--left))
 }
 
+@font-face {
+  font-family: DMSerif;
+  src: url(./assets/DMSerif.ttf);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -15,8 +20,35 @@ body {
 }
 
 .left {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-end;
+  gap: 6%;
   width: var(--left);
-  background-color: rgb(24, 24, 24);
+  padding: 13rem 1rem 0 1rem;
+  background: no-repeat
+      url('./assets/picture.jpg')
+      center / cover
+      rgb(255, 0, 0);
+}
+
+.logo-text {
+  margin: 0;
+  color: white;
+  font-family: DMSerif;
+  font-size: 6rem;
+  letter-spacing: 0.15rem;
+}
+
+.logo {
+  position: relative;
+  top: 1.5rem;
+  height: 10.5rem;
+  width: 10.5rem;
+  border-radius: 100%;
+  box-shadow: -1rem 1rem 6rem black;
 }
 
 .right {
