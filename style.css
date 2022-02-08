@@ -8,10 +8,16 @@
   src: url(./assets/DMSerif.ttf);
 }
 
+@font-face {
+  font-family: OpenSans;
+  src: url(./assets/OpenSans.ttf);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: OpenSans, sans-serif;
 }
 
 body {
@@ -27,7 +33,7 @@ body {
   align-content: flex-end;
   gap: 6%;
   width: var(--left);
-  padding: 13rem 1rem 0 1rem;
+  padding: 20vh 1rem 0 1rem;
   background: no-repeat
       url('./assets/picture.jpg')
       center / cover
@@ -37,7 +43,7 @@ body {
 .logo-text {
   margin: 0;
   color: white;
-  font-family: DMSerif;
+  font-family: DMSerif, serif;
   font-size: 6rem;
   letter-spacing: 0.15rem;
 }
@@ -61,15 +67,53 @@ body {
 }
 
 .description {
+  margin: -4rem 0 1.5rem 0;
   padding: 0 5vw 0 3vw;
+  font-family: OpenSans;
+  font-weight: 600;
+  font-size: 1.15rem;
 }
 
 form {
-  height: 17rem;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: flex-start;
   margin: 1.5rem 0 3rem 0;
-  padding: 2rem 5vw 2rem 3vw;
+  padding: 1.25rem 5vw 2.25rem 3vw;
   background: white;
   box-shadow: 0 3px 7px rgba(0, 0, 0, 0.116);
+}
+
+form > h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.inputs {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 3.5rem;
+}
+
+.col1,
+.col2 {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+label {
+  margin: 1.5rem 0 0.1rem 0;;
+  font-size: 0.7rem;
+  font-weight: 400;
+}
+
+form input {
+  height: 1.85rem;
+}
+
+button {
+  padding: 0.2rem 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .under-form {

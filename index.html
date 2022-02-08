@@ -22,12 +22,30 @@
       Sign up <em>now</em>.
     </div>
 
-    <form action="">
-      <input type='text'>
+    <form method='post' id='signup-form'>
+      <h2>Let's do this!</h2>
+      <div class='inputs'>
+        <div class='col1'>
+          <label for=''>FIRST NAME</label>
+          <input type='text' required>
+          <label for=''>EMAIL</label>
+          <input type='email' required>
+          <label for=''>PASSWORD</label>
+          <input type='password' required>
+        </div>
+        <div class='col2'>
+          <label for=''>LAST NAME</label>
+          <input type='text' required>
+          <label for=''>PHONE NUMBER</label>
+          <input type='tel' required>
+          <label for=''>CONFIRM PASSWORD</label>
+          <input type='password' required>
+        </div>
+      </div>
     </form>
 
     <div class='under-form'>
-      <button type='submit'>Create Account</button>
+      <button type='submit' form='signup-form'>Create Account</button>
       <br>
       <span>Already have an account?
         <a href=''>Log in</a>
