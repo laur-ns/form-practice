@@ -7,6 +7,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="./normalize.css">
   <link rel="stylesheet" href="./style.css">
+  <script src='./script.js' defer></script>
 </head>
 
 <body>
@@ -31,7 +32,8 @@
           <label for=''>EMAIL</label>
           <input type='email' required tabindex='3' placeholder=' '>
           <label for=''>PASSWORD</label>
-          <input type='password' required tabindex='5' placeholder=' '>
+          <input class='password-left' type='password' required tabindex='5' placeholder=' '>
+          <div class='password-error'><div class='content'>* Passwords do not match</div></div>
         </div>
         <div class='col2'>
           <label for=''>LAST NAME</label>
@@ -39,7 +41,7 @@
           <label for=''>PHONE NUMBER</label>
           <input type='tel' required tabindex='4' placeholder=' '>
           <label for=''>CONFIRM PASSWORD</label>
-          <input type='password' required tabindex='6' placeholder=' '>
+          <input class='password-right' type='password' required tabindex='6' placeholder=' '>
         </div>
       </div>
     </form>
