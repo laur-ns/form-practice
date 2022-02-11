@@ -37,15 +37,20 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #0c0c11;
 }
 
 .main-container {
+  display: flex;
+  justify-content: space-between;
   position: relative;
   flex: 0 0 auto;
-  height: 864px;
-  width: 1338px;
+  width: 70%;
   overflow: hidden;
-  background-color: black;
+  border-radius: 1rem;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.185);
+  background-repeat: no-repeat;
+  background-size: cover;
   background-image: url(./assets/background.jpg);
 }
 
@@ -55,27 +60,15 @@ body {
   position: absolute;
 }
 
-.outline {
-  position: absolute;
-  height: 150%;
-  width: 70%;
-  overflow: hidden;
-  border-radius: 63% 37% 32% 68% / 43% 42% 58% 57% ;
-  border: 4px dotted rgba(255, 255, 255, 0.089);
-  right: 53%;
-  top: -20%;
-}
-
 .form-section {
   height: 100%;
-  width: 46%;
-  position: absolute;
-  right: 0;
+  max-width: 40rem;
+  z-index: 1;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  margin-right: 2.35rem;
+  margin: 3rem 2% 3rem 2%;
   padding-bottom: 1rem;
   color: white;
 }
@@ -145,6 +138,14 @@ img#cerberus {
   text-decoration: none;
 }
 
+.sign-in > a:hover,
+.sign-in > a:focus {
+  text-decoration: underline;
+  outline: none;
+  box-shadow: 0 0 0 2px #0f1015,
+              0 0 0 4px var(--light-green);
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -163,9 +164,10 @@ form label {
   top: 5px;
   left: 15px;
   font-family: DMSans, sans-serif;
-  font-size: 0.78rem;
+  font-size: 0.75rem;
+  font-weight: 900;
   width: max-content;
-  color: rgb(227, 233, 243);
+  color: rgb(197, 203, 212);
 }
 
 .names,
@@ -176,24 +178,58 @@ form label {
 
 input,
 button {
-  padding: 0.75rem 1.25rem;
-  font-size: 1.6rem;
+  padding: 1rem 1.25rem;
+  font-size: 1.5rem;
   border-radius: 0.8rem;
   outline: none;
   color: white;
   width: 100%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.507);
   border: none;
   background-color: var(--dark-blue);
 }
 
 input {
   padding-top: 1.75rem;
-  padding-bottom: 0.65rem;
+  padding-bottom: 0.6rem;
+  box-shadow: inset 0 0 0 black;
+}
+
+input:not(:focus):not(:placeholder-shown):invalid,
+.error {
+  box-shadow: inset 0 -3px 0 0px rgb(182, 68, 68);
+} 
+
+.error-wrapper {
+  position: relative;
+  margin-top: -1.5rem;
+}
+
+.pass-error-msg {
+  display: none;
+  position: absolute;
+  color:rgb(228, 109, 109);
+  font-size: 0.8rem;
+  left: 0.65rem;
+  top: 0.2rem;
+}
+
+input:focus {
+  box-sizing: border-box;
+  box-shadow: inset 0 -3px 0 0px var(--light-green);
+  transition: box-shadow 0.25s ease-out;
 }
 
 button.submit {
   font-family: DMSerif, serif;
   background-color: var(--green);
   cursor: pointer;
+}
+
+button:hover {
+  background-color: #23816d;
+}
+
+button:focus {
+  box-shadow: 0 0 0 2px #0f1015,
+              0 0 0 3px var(--light-green);
 }

@@ -11,10 +11,10 @@
 </head>
 <body>
   <div class='main-container'>
-    <div class='outline'></div>
     <div class='hades-image'>
       <img src='./assets/hero.png' alt=''>
     </div>
+    <div class='hidden'></div>
     <section class='form-section'>
       <div class='logo-area'>
         <div class='hades-text'>HADES</div>
@@ -27,34 +27,37 @@
         <div class='sign-in'>Already have an account? <a href=''>Sign in</a></div>
       </div>
 
-      <form action=''>
+      <form action='' id='hades-form'>
         <div class='names'>
           <div class='label-wrapper'>
             <label for='fname'>FIRST NAME</label>
           </div>
-          <input type='text' name='fname' id='fname'>
+          <input type='text' name='fname' id='fname' placeholder=' ' required>
           <div class='label-wrapper'>
             <label for='lname'>LAST NAME</label>
           </div>
-          <input type='text' name='lname' id='lname'>
+          <input type='text' name='lname' id='lname' placeholder=' ' required>
         </div>
         <div class='label-wrapper'>
           <label for='email'>EMAIL</label>
         </div>
-        <input type='text' name='email' id='email'>
+        <input type='email' name='email' id='email' placeholder=' ' required>
         <div class='label-wrapper'>
           <label for='phone'>PHONE NUMBER</label>
         </div>
-        <input type='tel' name='phone' id='phone'>
+        <input type='tel' name='phone' id='phone' placeholder=' ' required>
         <div class='passwords'>
           <div class='label-wrapper'>
             <label for='pass'>PASSWORD</label>
           </div>
-          <input type='password' name='password' id='password'>
+          <input type='password' name='password' id='pass' placeholder=' ' required>
           <div class='label-wrapper'>
             <label for='confirm-pass'>CONFIRM PASSWORD</label>
           </div>
-          <input type='password' name='confirm-pass' id='confirm-pass'>
+          <input type='password' name='confirm-pass' id='confirm-pass' placeholder=' ' required>
+        </div>
+        <div class='error-wrapper'>
+          <div class='pass-error-msg'>* Passwords do not match</div>
         </div>
         <button class='submit'>Sign up</button>
       </form>
