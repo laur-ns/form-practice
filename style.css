@@ -1,3 +1,31 @@
+@font-face {
+  font-family: DMSans;
+  src: url(./assets/DMSans.ttf);
+}
+
+@font-face {
+  font-family: DMSerif;
+  src: url(./assets/DMSerifDisplay.ttf);
+}
+
+@font-face {
+  font-family: Juice;
+  src: url(./assets/Juice.ttf);
+}
+
+@font-face {
+  font-family: Bahnschrift;
+  src: url(./assets/Bahnschrift.TTF);
+}
+
+:root {
+  --purple: #8a6393;
+  --light-purple: #d1c5dd;
+  --light-green: #a4edc5;
+  --green: #167862;
+  --dark-blue: #232c3c;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -52,4 +80,68 @@ body {
   justify-content: center;
   align-items: center;
   color: white;
+}
+
+.logo-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 3rem;
+  gap: 2rem;
+}
+
+.hades-text {
+  font-size: 7.5rem;
+  font-family: Juice, fantasy;
+  letter-spacing: 0.4rem;
+  color: var(--light-purple)
+}
+
+.logo-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 11rem;
+  width: 11rem;
+  padding: 1.2rem;
+  margin-bottom: 2.95rem;
+  background-color: var(--light-purple);
+  border-radius: 100%;
+}
+
+img#cerberus {
+  height: 100%;
+  width: 100%;
+  margin: 0.2rem 0 0 0.75rem;
+}
+
+.form-descriptions {
+  width: 80%;
+  margin: -1.85rem 0 3rem 0.25rem;
+  padding-bottom: 2rem;
+  border-bottom: 0.17rem solid var(--light-green);
+  text-align: center;
+  color: white;
+}
+
+.create-acc {
+  font-family: Juice, fantasy;
+  font-size: 3.6rem;
+}
+
+.create-acc > span {
+  font-family: DMSans, sans-serif;
+  font-size: 3.7rem;
+  color: var(--light-green);
+}
+
+.sign-in {
+  font-family: Bahnschrift, serif;
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+
+.sign-in > a {
+  color: var(--light-green);
+  text-decoration: none;
 }
