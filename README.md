@@ -1,5 +1,7 @@
 # Form practice
 
+Vectors obtained from vecteezy.com
+
 [Live Demo](https://laur-ns.github.io/form-practice)
 
 ![Gif of website](https://i.imgur.com/ublquMJ.gif)
