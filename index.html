@@ -29,20 +29,32 @@
 
       <form action=''>
         <div class='names'>
-          <label for='fname'>FIRST NAME</label>
+          <div class='label-wrapper'>
+            <label for='fname'>FIRST NAME</label>
+          </div>
           <input type='text' name='fname' id='fname'>
-          <label for='lname'>LAST NAME</label>
+          <div class='label-wrapper'>
+            <label for='lname'>LAST NAME</label>
+          </div>
           <input type='text' name='lname' id='lname'>
         </div>
-        <label for='email'>EMAIL</label>
+        <div class='label-wrapper'>
+          <label for='email'>EMAIL</label>
+        </div>
         <input type='text' name='email' id='email'>
-        <label for='phone'>PHONE NUMBER</label>
+        <div class='label-wrapper'>
+          <label for='phone'>PHONE NUMBER</label>
+        </div>
         <input type='tel' name='phone' id='phone'>
         <div class='passwords'>
-          <label for='pass'>PASSWORD</label>
-          <input type='text' name='password' id='password'>
-          <label for='confirm-pass'>CONFIRM PASSWORD</label>
-          <input type='text' name='confirm-pass' id='confirm-pass'>
+          <div class='label-wrapper'>
+            <label for='pass'>PASSWORD</label>
+          </div>
+          <input type='password' name='password' id='password'>
+          <div class='label-wrapper'>
+            <label for='confirm-pass'>CONFIRM PASSWORD</label>
+          </div>
+          <input type='password' name='confirm-pass' id='confirm-pass'>
         </div>
         <button class='submit'>Sign up</button>
       </form>

@@ -71,14 +71,12 @@ body {
   width: 46%;
   position: absolute;
   right: 0;
-
-}
-
-.form-section {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+  margin-right: 2.35rem;
+  padding-bottom: 1rem;
   color: white;
 }
 
@@ -87,7 +85,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-left: 3rem;
-  gap: 2rem;
+  gap: 1.8rem;
 }
 
 .hades-text {
@@ -101,10 +99,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 11rem;
-  width: 11rem;
+  height: 10.5rem;
+  width: 10.5rem;
   padding: 1.2rem;
-  margin-bottom: 2.95rem;
+  margin-bottom: 1.5rem;
   background-color: var(--light-purple);
   border-radius: 100%;
 }
@@ -117,8 +115,8 @@ img#cerberus {
 
 .form-descriptions {
   width: 80%;
-  margin: -1.85rem 0 3rem 0.25rem;
-  padding-bottom: 2rem;
+  margin: -0.8rem 0 2.5rem 0.25rem;
+  padding-bottom: 2.35rem;
   border-bottom: 0.17rem solid var(--light-green);
   text-align: center;
   color: white;
@@ -130,6 +128,7 @@ img#cerberus {
 }
 
 .create-acc > span {
+  margin-left: 0.35rem;
   font-family: DMSans, sans-serif;
   font-size: 3.7rem;
   color: var(--light-green);
@@ -144,4 +143,57 @@ img#cerberus {
 .sign-in > a {
   color: var(--light-green);
   text-decoration: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 90%;
+}
+
+.label-wrapper {
+  position: relative;
+  margin-right: -1.5rem;
+  margin-bottom: -1.5rem;
+}
+
+form label {
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  font-family: DMSans, sans-serif;
+  font-size: 0.78rem;
+  width: max-content;
+  color: rgb(227, 233, 243);
+}
+
+.names,
+.passwords {
+  display: flex;
+  gap: 1.5rem;
+}
+
+input,
+button {
+  padding: 0.75rem 1.25rem;
+  font-size: 1.6rem;
+  border-radius: 0.8rem;
+  outline: none;
+  color: white;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.507);
+  border: none;
+  background-color: var(--dark-blue);
+}
+
+input {
+  padding-top: 1.75rem;
+  padding-bottom: 0.65rem;
+}
+
+button.submit {
+  font-family: DMSerif, serif;
+  background-color: var(--green);
+  cursor: pointer;
 }
