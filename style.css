@@ -43,5 +43,13 @@ body {
   width: 46%;
   position: absolute;
   right: 0;
-  background-color: red;
+
+}
+
+.form-section {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
