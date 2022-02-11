@@ -24,6 +24,7 @@ body {
 .hades-image,
 .hades-image > img {
   height: 100%;
+  position: absolute;
 }
 
 .outline {
@@ -38,5 +39,9 @@ body {
 }
 
 .form-section {
+  height: 100%;
+  width: 46%;
+  position: absolute;
+  right: 0;
   background-color: red;
 }
