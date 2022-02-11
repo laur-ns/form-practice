@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -11,8 +12,11 @@ body {
 }
 
 .main-container {
+  position: relative;
+  flex: 0 0 auto;
   height: 864px;
   width: 1338px;
+  overflow: hidden;
   background-color: black;
   background-image: url(./assets/background.jpg);
 }
@@ -20,4 +24,19 @@ body {
 .hades-image,
 .hades-image > img {
   height: 100%;
+}
+
+.outline {
+  position: absolute;
+  height: 150%;
+  width: 70%;
+  overflow: hidden;
+  border-radius: 63% 37% 32% 68% / 43% 42% 58% 57% ;
+  border: 4px dotted rgba(255, 255, 255, 0.089);
+  right: 53%;
+  top: -20%;
+}
+
+.form-section {
+  background-color: red;
 }
