@@ -1,58 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset='UTF-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
   <title>Document</title>
-  <link rel="stylesheet" href="./normalize.css">
-  <link rel="stylesheet" href="./style.css">
+
+  <link rel='stylesheet' href='./style.css'>
   <script src='./script.js' defer></script>
 </head>
-
 <body>
-  <div class="left">
-    <h1 class="logo-text">ZEUS</h1>
-    <img src="./assets/logo.png" alt="logo" class='logo'>
-  </div>
-
-  <div class="right">
-    <div class="description">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, dicta earum? Placeat odit dolore numquam vel sed error inventore sint vitae excepturi ut ratione, quisquam consectetur laborum rem perspiciatis dicta!
-      <br><br>
-      Sign up <em>now</em>.
+  <div class='main-container'>
+    <div class='hades-image'>
+      <img src='./assets/hero.png' alt=''>
     </div>
-
-    <form method='post' id='signup-form'>
-      <h2>Let's do this!</h2>
-      <div class='inputs'>
-        <div class='col1'>
-          <label for=''>FIRST NAME</label>
-          <input type='text' required tabindex='1' placeholder=' '>
-          <label for=''>EMAIL</label>
-          <input type='email' required tabindex='3' placeholder=' '>
-          <label for=''>PASSWORD</label>
-          <input class='password-left' type='password' required tabindex='5' placeholder=' '>
-          <div class='password-error'><div class='content'>* Passwords do not match</div></div>
-        </div>
-        <div class='col2'>
-          <label for=''>LAST NAME</label>
-          <input type='text' required tabindex='2' placeholder=' '>
-          <label for=''>PHONE NUMBER</label>
-          <input type='tel' required tabindex='4' placeholder=' '>
-          <label for=''>CONFIRM PASSWORD</label>
-          <input class='password-right' type='password' required tabindex='6' placeholder=' '>
-        </div>
-      </div>
-    </form>
-
-    <div class='under-form'>
-      <button type='submit' form='signup-form'>Create Account</button>
-      <br>
-      <span>Already have an account?
-        <a href=''>Log in</a>
-      </span>
-    </div>
+    <section class='form-section'></section>
   </div>
 </body>
 </html>
